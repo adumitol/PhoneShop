@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<h3>Cart</h3>
+
+<p>
+    <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+@for (item of items; track item.name) {
+    <div class="cart-item">
+        <span>{{ item.name }}</span>
+        <span>{{ item.price | currency }}</span>
+    </div>
+}
