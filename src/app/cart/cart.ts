@@ -12,8 +12,11 @@ import {CurrencyPipe} from "@angular/common";
 })
 export class Cart {
     items = this.cartService.getItems();
-
     constructor(
         private cartService: CartService
     ) { }
+
+
+
+
 }
