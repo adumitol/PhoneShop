@@ -1,0 +1,14 @@
+[
+  {
+    "id": 101,
+    "name": "Global Tech",
+    "description": "Distribuidor principal de la serie XL",
+    "website": "https://globaltech.example.com"
+  },
+  {
+    "id": 102,
+    "name": "Compact Solutions",
+    "description": "Especialistas en dispositivos móviles pequeños",
+    "website": "https://compactsol.example.com"
+  }
+]

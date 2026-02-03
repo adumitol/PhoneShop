@@ -1,5 +1,3 @@
-
-
 <h2>Product Details</h2>
 
 @if (product) {
@@ -7,6 +5,14 @@
         <h3>{{ product.name }}</h3>
         <h4>{{ product.price | currency }}</h4>
         <p>{{ product.description }}</p>
+
+        <p>
+            <strong>Provider:</strong>
+            <a [routerLink]="['/providers', product.providerId]">
+                View Provider Details
+            </a>
+        </p>
+
         <button type="button" (click)="addToCart(product)">Buy</button>
     </div>
 }
