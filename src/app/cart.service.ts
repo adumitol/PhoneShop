@@ -13,7 +13,9 @@ export class CartService {
     ) {}
 
     addToCart(product: Product) {
-        this.items.push(product);
+        this.items.push(product)
+        //Al añadir un producto al carrito, resta 1 el stock del producto
+        product.cantidad = product.cantidad -1
     }
 
     getItems() {

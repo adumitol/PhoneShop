@@ -3,7 +3,8 @@ export interface Product {
     name: string;
     price: number;
     description: string;
-    providerId: number; // Nueva propiedad
+    providerId: number;
+    cantidad : number //Nueva cantidad examen
 }
 
 export const products: Product[] = [
@@ -12,20 +13,23 @@ export const products: Product[] = [
         name: 'Phone XL',
         price: 799,
         description: 'A large phone with one of the best screens',
-        providerId: 101
+        providerId: 101,
+        cantidad: 2
     },
     {
         id: 2,
         name: 'Phone Mini',
         price: 699,
         description: 'A great phone with one of the best cameras',
-        providerId: 102
+        providerId: 102,
+        cantidad: 0
     },
     {
         id: 3,
         name: 'Phone Standard',
         price: 299,
         description: '',
-        providerId: 101
+        providerId: 101,
+        cantidad: 7
     }
 ];
